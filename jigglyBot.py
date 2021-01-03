@@ -8,14 +8,7 @@ from itertools import cycle
 client = commands.Bot(command_prefix = '*')
 status = cycle(['I am cute'])
 
-#Upvote downvote Reactions
-'''
-@client.event
 
-async def on_message(message):
-    if discord.File.endswith('jpg') in message.content:
-        await message.add_reaction('\U0001F44D')
-'''
 
 #Reaction Roles
 reaction_title=""
@@ -152,5 +145,12 @@ async def on_message(message):
  '''   
 client.run('NzgwNDI0NTU1NTU4NzMxNzg2.X7u5AQ.Pxk4fUg7CMT5YQADcvGtrRsqqsA')
 
+#Upvote downvote Reactions
+'''
+@client.event
 
+async def on_message(message):
+    if discord.File.endswith('jpg') in message.content:
+        await message.add_reaction('\U0001F44D')
+'''
 
